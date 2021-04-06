@@ -36,9 +36,10 @@ class News {
 class NewsForCategorie {
   List<Article> news = [];
 
-  Future<void> getNewsForCategory(String category) async {
+  Future<void> getNewsForCategory(String id) async {
+    //String id = category.id;
     String url =
-        "http://newsapi.org/v2/top-headlines?country=tr&category=$category&apiKey=32258dfe367e4349811e9ddab20abae1";
+        "http://newsapi.org/v2/top-headlines?country=tr&category=$id&apiKey=32258dfe367e4349811e9ddab20abae1";
 
     var response = await http.get(url);
 

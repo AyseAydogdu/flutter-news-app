@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/article_view.dart';
+import 'package:news_app/view/article_view.dart';
 
 class NewsTile extends StatelessWidget {
   final String imgUrl, title, desc, content, posturl;

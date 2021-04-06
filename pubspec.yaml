@@ -26,7 +26,10 @@ dependencies:
   http: ^0.12.2
   cached_network_image: ^2.0.0
   webview_flutter: ^0.3.19+9
-
+  translator: ^0.1.5
+  provider: ^4.3.3
+  firebase_admob: ^0.11.0+1
+  firebase_core: ^0.7.0
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.1
@@ -47,13 +50,13 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  assets:
-    - images/is.jpg
-    - images/eglence.jpg
-    - images/spor.jpg
-    - images/saglik.jpg
-    - images/bilim.jpg
-    - images/teknoloji.jpg
+  #assets:
+    
+    #- images/eglence.jpg
+    #- images/spor.jpg
+    #- images/saglik.jpg
+    #- images/bilim.jpg
+    #- images/teknoloji.jpg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

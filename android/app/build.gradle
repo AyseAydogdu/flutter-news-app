@@ -24,6 +24,7 @@ if (flutterVersionName == null) {
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 29
@@ -41,8 +42,10 @@ android {
         applicationId "com.example.news_app"
         minSdkVersion 16
         targetSdkVersion 29
+        multiDexEnabled true
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
+        
     }
 
     buildTypes {
@@ -59,5 +62,13 @@ flutter {
 }
 
 dependencies {
+    def multidex_version = "2.0.1"
+    implementation "androidx.multidex:multidex:$multidex_version"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    //implementation 'com.google.android.gms:play-services-ads:19.7.0'
+    implementation 'com.google.android.gms:play-services-basement:17.5.0'
+    implementation 'com.google.android.gms:play-services-ads:19.3.0'
+    //implementation platform('com.google.firebase:firebase-bom:26.5.0')
+    androidTestImplementation 'androidx.test:runner:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
 }
