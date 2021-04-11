@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/api/news_api.dart';
 import 'package:news_app/model/category.dart';
-import 'package:news_app/news_tile.dart';
+import 'package:news_app/view/news_tile.dart';
 import 'package:news_app/provider/category_provider.dart';
 import 'package:news_app/services/advert_services.dart';
 import 'package:provider/provider.dart';

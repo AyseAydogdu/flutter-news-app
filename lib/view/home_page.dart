@@ -1,13 +1,14 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:news_app/api/news_api.dart';
-import 'package:news_app/category_news.dart';
-import 'package:news_app/data.dart';
-import 'package:news_app/news_tile.dart';
+import 'package:news_app/view/category_news.dart';
+import 'package:news_app/data/category_data.dart';
+import 'package:news_app/view/news_tile.dart';
+import 'package:news_app/provider/category_provider.dart';
 import 'package:news_app/services/advert_services.dart';
 import 'package:provider/provider.dart';
 
-import 'model/category.dart';
+import '../model/category.dart';
 
 class HomePage extends StatefulWidget {
   @override
